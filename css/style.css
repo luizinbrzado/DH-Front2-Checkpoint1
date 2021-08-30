@@ -69,9 +69,17 @@ transform: translate(-50%, -50%);
 
 /* /PEGADINHA MALANDRO */
 
+/* TUDO */
+
+.all {
+    margin: 100px;
+    background-color: aqua;
+    text-align: center;
+}
+
 /* FORMULÁRIO */
 
-form {
+.form {
     max-width: 500px;
     width: 70%;
     height: auto;
@@ -79,23 +87,22 @@ form {
     background-color: var(--scolor);
     border-radius: 10px;
     border: 2px solid var(--dcolor);
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%);
 }
 
-form h3 {
+.form h3 {
     text-align: center;
     color: var(--pcolor);
     font-size: 30px;
 }
 
-form label {
+.form label {
     cursor: pointer;
 }
 
-form input[type=text] {
+.form input[type=text] {
     width: 100%;
     height: 45px;
     border: 2px solid var(--pcolor);
@@ -105,15 +112,15 @@ form input[type=text] {
     transition: border 0.1s ease;
 }
 
-form input[type=text]:focus {
+.form input[type=text]:focus {
     border: 2px solid var(--dcolor);
 }
 
-form input[type=text]::placeholder {
-    color: var(--pcolor);
+.form input[type=text]::placeholder {
+    color: rgb(65, 41, 47, 0.5);
 }
 
-form button {
+.form button {
     border-radius: 10px;
     background-color: var(--dcolor);
     color: var(--pcolor);
@@ -126,8 +133,44 @@ form button {
     transition: border 0.2s ease;
 }
 
-form button:focus, form button:hover{
+.form button:focus, .form button:hover{
     border: 2px solid var(--pcolor);
 }
 
 /* /FORMULÁRIO */
+
+/* CARDS */
+
+.cards {
+    padding: 10px;
+    width: 500px;
+    margin: 10px auto 0 auto;
+}
+
+.cards h2, .cards p {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    word-break: break-word;
+}
+
+.cards img {
+    max-width: 500px;
+    width: 50%;
+    margin: 10px 0 10px 0;
+    word-break: break-word;
+}
+
+.divfofoca {
+    border: 1px solid var(--pcolor);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.divfofoca img {
+    max-width: 300;
+}
+
+/* /CARDS */
+
+/* /TUDO */
