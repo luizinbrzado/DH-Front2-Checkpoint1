@@ -137,14 +137,22 @@ transform: translate(-50%, -50%);
 
 .contato {
     margin-top: 20px;
-    text-align: center;
+}
+
+form label {
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     padding: 20px;
-    background-color: aqua;
+    background-color: var(--scolor);
     border-radius: 10px;
-    width: 50%;
+    width: 550px;
 }
 
 form input {
@@ -157,7 +165,7 @@ form input {
     transition: border 0.1s ease;
 }
 
-form input {
+form input:focus {
     border: 2px solid var(--dcolor);
 }
 
@@ -172,8 +180,27 @@ form textarea {
     resize: none;
 }
 
-form textarea {
+form textarea:focus {
     border: 2px solid var(--dcolor);
+}
+
+form button {
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--dcolor);
+    color: var(--pcolor);
+    border: 2px solid transparent;
+    padding: 0.4rem 1rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-right: auto;
+    cursor: pointer;
+    transition: border 0.2s ease;
+}
+
+form button:focus, form button:hover{
+    border: 2px solid var(--pcolor);
 }
 
 /* /FORM CONTATO */
@@ -236,7 +263,7 @@ form textarea {
     transition: border 0.2s ease;
 }
 
-.form button:focus, .form button:hover{
+.form button:focus {
     border: 2px solid var(--pcolor);
 }
 

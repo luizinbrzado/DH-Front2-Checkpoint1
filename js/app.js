@@ -107,7 +107,7 @@ function criarFormContato() {
             </div>
             <div>
                 <label for="assunto">Assunto:</label>
-                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea required>
+                <textarea name="assunto" id="assunto" cols="30" rows="10" placeholder="Coloque aqui o corpo do texto"></textarea required>
             </div>
             <button type="sumbit">Enviar</button>
         </form>
