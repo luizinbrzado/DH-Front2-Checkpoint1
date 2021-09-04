@@ -1,7 +1,7 @@
-var corpo = document.body;
+var corpo = document.body.querySelector("main");
 
 
-function criarForm() {
+function criarFormFofoca() {
     corpo.innerHTML = `
     <div class="bobo">
         <p class="pBobo">Fica fofocando aí, bobo(a)</p>
@@ -9,10 +9,10 @@ function criarForm() {
     </div>
     `;
 
-    function Formulario() {
+    function form() {
         setTimeout(() => {
             corpo.innerHTML = `
-            <div class"all">
+            <div class="all">
                 <div class="form">
                     <h3>Envie sua fofoca</h3>
                     <div>
@@ -34,10 +34,10 @@ function criarForm() {
                 </div>
             </div>
             `
-        }, 1);
+        }, 1000);
     }
 
-    Formulario();
+    form();
 }
 
 function novoCard() {
@@ -54,7 +54,7 @@ function novoCard() {
             <p>${desc.value}</p>
             <img src="${imgUrl.value}" alt="${title.value}">
             `;
-    
+
     cards.appendChild(div);
 
     title.value = "";
@@ -62,4 +62,55 @@ function novoCard() {
     imgUrl.value = "";
 
     title.focus();
+}
+
+function criarEquipe() {
+    corpo.innerHTML = `
+    <div class="equipe">
+        <div>
+            <img class="imgPerfil" src="./img/Paulocagao.png" alt="Cagão Master">
+            <h2>Paulo Cagão Ventura</h2>
+            <a href="" target="_blank"><img class="imgContatos" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/03/github.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/paulo-ventura-50079913/" target="_blank"><img class="imgContatos" src="https://99prod.s3.amazonaws.com/uploads/image/file/549999/linkedin-logo-3.png" alt=""></a>
+        </div>
+        <div>
+            <img class="imgPerfil" src="./img/NelsonBestayashi.png" alt="Cagão Master">
+            <h2>Nelson Bestayashi</h2>
+            <a href="" target="_blank"><img class="imgContatos" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/03/github.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/nelsonkobayashi/" target="_blank"><img class="imgContatos" src="https://99prod.s3.amazonaws.com/uploads/image/file/549999/linkedin-logo-3.png" alt=""></a>
+        </div>
+        <div>
+            <img class="imgPerfil" src="./img/tapioca.png" alt="Cagão Master">
+            <h2>Luiz Tapioca Boy</h2>
+            <a href="" target="_blank"><img class="imgContatos" src="https://rockcontent.com/br/wp-content/uploads/sites/2/2020/03/github.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/luizinbrzado/" target="_blank"><img class="imgContatos" src="https://99prod.s3.amazonaws.com/uploads/image/file/549999/linkedin-logo-3.png" alt=""></a>
+        </div>
+    </div>
+    `;
+}
+
+function criarFormContato() {
+    corpo.innerHTML = `
+    <div class="contato">
+        <form action="#" method="POST">
+            <div>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="João Vitor" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="nome@domain.com" required>
+            </div>
+            <div>
+                <label for="tituloassunto">Título do assunto:</label>
+                <input type="text" id="tituloassunto" placeholder="Quero fazer um projeto" required>
+            </div>
+            <div>
+                <label for="assunto">Assunto:</label>
+                <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea required>
+            </div>
+            <button type="sumbit">Enviar</button>
+        </form>
+    </div>
+    `;
 }
