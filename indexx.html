@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form onsubmit="return validateForm()" method="post" action="form.php" name="english_registration_form"
+        id="english_registration_form">
+        <input type="text" id="name" name="name" aria-describedby="name-format" placeholder="Name">
+        <span class="error">
+            <p id="name_error"></p>
+        </span>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <span class="error">
+            <p id="email_error"></p>
+        </span>
+        <input type="tel" id="telephone" name="telephone" placeholder="Telephone">
+        <span class="error">
+            <p id="telephone_error"></p>
+        </span>
+        <button class="register_button" type="submit" value="submit">Register Now</button>
+    </form>
+    <script>
+        function validateForm() {
+            var x = document.forms["english_registration_form"]["name"].value;
+            var y = document.forms["english_registration_form"]["email"].value;
+            var z = document.forms["english_registration_form"]["telephone"].value;
+
+
+            document.getElementById("name_error").innerHTML = ''
+            document.getElementById("email_error").innerHTML = ''
+            document.getElementById("telephone_error").innerHTML = ''
+            
+            if (x == null || x == "") {
+                nameError = "Please enter your name";
+                document.getElementById("name_error").innerHTML = nameError;
+                return false;
+
+            }
+            
+            else if (y == null || y == "") {
+                emailError = "Please enter your email";
+                document.getElementById("email_error").innerHTML = emailError;
+                return false;
+            }
+
+            else if (z == null || z == "") {
+                telephoneError = "Please enter your telephone";
+                document.getElementById("telephone_error").innerHTML = telephoneError;
+                return false;
+            }
+
+            else { return true; }
+        }
+    </script>
+</body>
+
+</html>

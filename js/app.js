@@ -146,7 +146,7 @@ function criarEquipe() {
 
         <div class="perfil">
             <a href="">
-                <img src="./img/Luiz.png" alt="Foto do Luiz">
+                <img class="imgLuiz" src="./img/Luiz.png" alt="Foto do Luiz">
             </a>
             <div class="description">
                 <div class="contatos">
@@ -168,6 +168,7 @@ function criarFormContato() {
     corpo.innerHTML = `
     <div class="contato">
         <form action="#" method="POST">
+            <h3>CONTATO</h3>
             <div>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" placeholder="João Vitor" required>
