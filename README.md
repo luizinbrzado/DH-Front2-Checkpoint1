@@ -22,11 +22,10 @@
 > - -  Url;
 > - - Submit.
  
-#### Funcionalidade: O formulário deve permitir "colar" a url da imagem interna ou externa e adicionar ao card;
+2. #### Funcionalidade: O formulário deve permitir "colar" a url da imagem interna ou externa e adicionar ao card;
 
+3. #### "A Equipe" - gerado em JS ao clicar o botão com o mesmo nome;
 
-#### "A Equipe" - gerado em JS ao clicar o botão com o mesmo nome;
+4. #### Contato - formulário Funcionalidade: O usuário clicará em um botão "Entrar em contato" e será gerado um formulário JS dinamicamente.
 
-#### Contato - formulário Funcionalidade: O usuário clicará em um botão "Entrar em contato" e será gerado um formulário JS dinamicamente.
-
-#### Tema: - Livre Entrega: - Tema em grupo com entrega individual.
+5. #### Tema: - Livre Entrega: - Tema em grupo com entrega individual.
