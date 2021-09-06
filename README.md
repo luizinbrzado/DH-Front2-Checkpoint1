@@ -17,10 +17,10 @@
 > - Pesquisa;
 > - Código base do grupo para os projetos individuais;
 > - Formulário com inputs: 
--- 1. Título;
--- 2. Descrição;
--- 3.  Url;
--- 4. Submit.
+- - 1. Título;
+- - 2. Descrição;
+- - 3.  Url;
+- - 4. Submit.
 
 ---
  
